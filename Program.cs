@@ -11,27 +11,38 @@ namespace ConsoleApp5
         static void Main(string[] args)
         {
 
-            //IsPrime(10);
+            IsPrime(10);
 
 
 
 
             //CalcAvg(70,50,60,40,70,86);
-          
+
         }
 
-        //static void IsPrime(int value)
-        //{
+        static void IsPrime(int value)
+        {
+            int say = 0;
+            Console.WriteLine("Ededi daxil edin");
+            value =Convert.ToInt32(Console.ReadLine());
 
-        //    if (value%2==0)
-        //    {
-        //        Console.WriteLine("false");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine(true);
-        //    }
-        //}
+            for (int i = 1; i <= value; i++)
+            {
+                if(value%i==0)
+                {
+                    say++;  
+                }
+            }
+            if(say==2)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+            Console.ReadLine();
+        }
 
 
 
